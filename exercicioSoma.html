@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>JavaScript</title>
+
+		<script>
+			function soma() {
+				const n1 = parseFloat(document.getElementById('n1').value);
+				const n2 = parseFloat(document.getElementById('n2').value);
+				const resultado = n1 + n2;
+				document.getElementById('resultado').innerText =
+					'O Resultado é: ' + resultado;
+			}
+			function subtração() {
+				const n1 = parseFloat(document.getElementById('n1').value);
+				const n2 = parseFloat(document.getElementById('n2').value);
+				const resultado = n1 - n2;
+				document.getElementById('resultado').innerText =
+					'O Resultado é: ' + resultado;
+			}
+			function multiplicação() {
+				const n1 = parseFloat(document.getElementById('n1').value);
+				const n2 = parseFloat(document.getElementById('n2').value);
+				const resultado = n1 * n2;
+				document.getElementById('resultado').innerText =
+					'O Resultado é: ' + resultado;
+			}
+			function divisão() {
+				const n1 = parseFloat(document.getElementById('n1').value);
+				const n2 = parseFloat(document.getElementById('n2').value);
+				const resultado =
+					n2 !== 0 ? n1 / n2 : 'Divisão por zero não é permitida';
+				document.getElementById('resultado').innerText =
+					'O Resultado é: ' + resultado;
+			}
+		</script>
+	</head>
+	<body>
+		<form action="">
+			n1:
+			<input
+				type="number"
+				id="n1"
+				placeholder="Digite um número" /><br /><br />
+			n2:
+			<input
+				type="number"
+				id="n2"
+				placeholder="Digite outro número" /><br /><br />
+			<button
+				type="button"
+				onclick="soma()">
+				Somar
+			</button>
+			<button
+				type="button"
+				onclick="subtração()">
+				Subtração
+			</button>
+			<button
+				type="button"
+				onclick="multiplicação()">
+				Multiplicação
+			</button>
+			<button
+				type="button"
+				onclick="divisão()">
+				Divisão
+			</button>
+			<br />
+			<p id="resultado">O Resultado é</p>
+		</form>
+	</body>
+</html>

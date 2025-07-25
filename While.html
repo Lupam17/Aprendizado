@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>While</title>
+
+		<script>
+			let contador = 1;
+			let qtd = Number(prompt('Quantas notas você quer digitar?'));
+			let soma = 0;
+			let nota = 0;
+
+			while (contador <= qtd) {
+				nota = Number(prompt('Digite a nota ' + contador + ':'));
+				soma += nota;
+				contador++;
+			}
+
+			console.log(' Sua média foi:' + soma / qtd);
+			let media = soma / qtd;
+			if (media >= 7 && media <= 10) {
+				console.log('Parabéns, você foi aprovado!');
+			} else if (media >= 5 && media < 7) {
+				console.log('Você está de recuperação, estude mais!');
+			} else if (media >= 10) {
+				console.log('Erro!');
+			} else {
+				console.log('Infelizmente você foi reprovado, estude mais!');
+			}
+			
+		</script>
+	</head>
+	<body></body>
+</html>

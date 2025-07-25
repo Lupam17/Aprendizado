@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Estruturas de Condição</title>
+
+		<script>
+			const n1 = Number(prompt('Digite o primeiro número:'));
+			const n2 = Number(prompt('Digite o segundo número:'));
+			const n3 = Number(prompt('Digite o terceiro número:'));
+			const n4 = Number(prompt('Digite o quarto número:'));
+
+			const media = (n1 + n2 + n3 + n4) / 4;
+
+			console.log(' À média final é ' + media);
+
+			if (media >= 7 && media <= 10) {
+				console.log('Parabéns, você foi aprovado!');
+			} else if (media >= 5 && media < 7) {
+				console.log('Você está de recuperação, estude mais!');
+			} else if (media >= 10) {
+				console.log('Erro!');
+			} else {
+				console.log('Infelizmente você foi reprovado, estude mais!');
+			}
+		</script>
+	</head>
+	<body></body>
+</html>

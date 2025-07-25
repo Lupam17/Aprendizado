@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Switch Case</title>
+
+		<script>
+			const cargo = prompt('Digite seu cargo');
+			const salario = 1000;
+			let aumento = 0;
+
+			switch (cargo) {
+				case 'estagiário':
+					aumento = 2;
+					break;
+				case 'gerente':
+					aumento = 1.5;
+					break;
+				case 'diretor':
+					aumento = 1.25;
+					break;
+				case 'presidente':
+					aumento = 1.1;
+					break;
+
+				default:
+					console.log('Cargo inválido!');
+			}
+			
+
+			let novoSalario = salario * aumento;
+			console.log('Seu novo salário é: ' + novoSalario);
+		</script>
+	</head>
+	<body></body>
+</html>

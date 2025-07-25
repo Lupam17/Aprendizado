@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Imersão JS</title>
+
+		<script>
+			/*
+		let anoNascimento = Number(prompt('Digite o ano que nasceu'));
+		let anoAtual = Number(prompt('Digite o ano atual'));
+		let idade = anoAtual - anoNascimento;
+
+		if (idade < 16){
+			document.write('Não eleitor');
+		} else if (idade >= 16 && idade < 18 || idade >= 65)
+		document.write('Voto opcional');
+		else {
+			document.write('Voto obrigatório');
+		}
+
+			let num1 = parseInt(prompt('Digite o primeiro número'));
+			let op = prompt('Digite a operação desejada: +, -, *, /');
+			let num2 = parseInt(prompt('Digite o segundo número'));
+			
+
+			switch (op) {
+				case '+': document.write(
+					`A soma de ${num1} + ${num2} é igual a ${num1 + num2}`
+				);
+					break;
+					case '-': document.write( 'A subtração de ' + num1 + ' - ' + num2 + ' é igual a ' + (num1 - num2));
+					break;
+
+				case '*': document.write(
+					`A multiplicação de ${num1} * ${num2} é igual a ${num1 * num2}`
+				);
+					break;
+				case '/': document.write(
+					`A divisão de ${num1} / ${num2} é igual a ${num1 / num2}`
+				);
+				default: document.write('Operação inválida');
+				
+			}
+
+
+			let contador = 1;
+			let multiplicação = 0
+			let tabuada = parseInt(prompt('Digite o número que deseja ver a tabuada:'));
+
+			while (contador <= 10) {
+				multiplicação = tabuada * contador;
+				document.write(tabuada + ' x ' + contador + ' = ' + multiplicação + '<br>');
+				contador++;
+			}
+*/
+
+			let tabuada = parseInt(
+				prompt('Digite o número que deseja ver a tabuada:')
+			);
+			let multiplicação = 0;
+			for (let contador = 1; contador <= 10; contador++) {
+				multiplicação = tabuada * contador;
+				document.write(tabuada + ' X ' + contador + ' = ' + multiplicação + '<br>');
+			}
+		</script>
+	</head>
+	<body></body>
+</html>
